@@ -7,7 +7,7 @@ $text = $_POST["text"];
 
 if ($text == "") {
     // This is the first request. Note how we start the response with CON
-    $response  = "CON Welcome to Loxin Worx porting service. Would you like to port your mobile number? \n";
+    $response  = "CON Welcome Mr Thandile Jwambi. Would you like to port your mobile number? \n";
     $response .= "1. Yes \n";
     $response .= "2. No";
 
@@ -23,7 +23,7 @@ if ($text == "") {
 
 } else if($text == "1*1") { 
     // This is a terminal request. Note how we start the response with END
-    $response = "END Your mobile number has been ported, please insert your new SIM car";
+    $response = "END Thank Thandile, your mobile number has been ported, please insert your new SIM car";
 }
 
 // Echo the response back to the API
