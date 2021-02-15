@@ -13,17 +13,17 @@ if ($text == "") {
 
 } else if ($text == "1") {
     // Business logic for first level response
-    $response = "CON Your are about to port your SIM car \n";
-    $response .= "1. Please enter your SIM PIN";
+    $response = "CON Your are about to port your SIM card \n";
+    $response .= "1. Please enter your SIM card PIN";
 
 } else if ($text == "2") {
     // Business logic for first level response
     // This is a terminal request. Note how we start the response with END
-    $response = "END Your port request has been declined";
+    $response = "END Mr Jwambi, your port request has been declined.";
 
 } else if($text == "1*1") { 
     // This is a terminal request. Note how we start the response with END
-    $response = "END Thank Thandile, your mobile number has been ported, please insert your new SIM car";
+    $response = "END Thank Mr Jwambi, your mobile number has been ported succesfully. Please insert your new SIM card into your mobile phone.";
 }
 
 // Echo the response back to the API
