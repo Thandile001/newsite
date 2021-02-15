@@ -7,9 +7,9 @@ $text = $_POST["text"];
 
 if ($text == "") {
     // This is the first request. Note how we start the response with CON
-    $response  = "CON What would you want to check \n";
-    $response .= "1. My Account Number \n";
-    $response .= "2. My phone number";
+    $response  = "CON Would you like to port your mobile number? \n";
+    $response .= "1. Yes \n";
+    $response .= "2. No";
 
 } else if ($text == "1") {
     // Business logic for first level response
