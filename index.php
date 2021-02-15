@@ -24,17 +24,17 @@ if ($text == "") {
 
 } else if($text == "1*1") { 
     // This is a second level response where the user selected 1 in the first instance
-    $accountNumber  = "ACC1001";
+    $accountNumber  = "202102151001";
 
     // This is a terminal request. Note how we start the response with END
     $response = "END Your account number is ".$accountNumber;
 
 } else if ( $text == "1*2" ) {
     // This is a second level response where the user selected 1 in the first instance
-    $accountBalance  = "ZAR 10,000";
+    $balance  = "ZAR 10,000";
 
     // This is a terminal request. Note how we start the response with END
-    $response = "END Your balance is ".$accountBalance;
+    $response = "END Your balance is ".$balance;
 }
 
 // Echo the response back to the API
