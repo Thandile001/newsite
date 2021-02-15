@@ -13,28 +13,17 @@ if ($text == "") {
 
 } else if ($text == "1") {
     // Business logic for first level response
-    $response = "CON Choose account information you want to view \n";
-    $response .= "1. Account number \n";
-    $response .= "2. Account balance";
+    $response = "CON Your are about to port your SIM car \n";
+    $response .= "1. Please enter your SIM PIN";
 
 } else if ($text == "2") {
     // Business logic for first level response
     // This is a terminal request. Note how we start the response with END
-    $response = "END Your phone number is ".$phoneNumber;
+    $response = "END Your port request has been declined";
 
 } else if($text == "1*1") { 
-    // This is a second level response where the user selected 1 in the first instance
-    $accountNumber  = "202102151001";
-
     // This is a terminal request. Note how we start the response with END
-    $response = "END Your account number is ".$accountNumber;
-
-} else if ( $text == "1*2" ) {
-    // This is a second level response where the user selected 1 in the first instance
-    $balance  = "ZAR 10,000";
-
-    // This is a terminal request. Note how we start the response with END
-    $response = "END Your balance is ".$balance;
+    $response = "END Your mobile number has been ported, please insert your new SIM car";
 }
 
 // Echo the response back to the API
