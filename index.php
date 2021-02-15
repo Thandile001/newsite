@@ -7,7 +7,7 @@ $text = $_POST["text"];
 
 if ($text == "") {
     // This is the first request. Note how we start the response with CON
-    $response  = "Hello! Would you like to port your mobile number? \n";
+    $response  = "CON Hello! Would you like to port your mobile number? \n";
     $response .= "1. Yes \n";
     $response .= "2. No";
 
